@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Stas Babaev](https://up.htmlacademy.ru/htmlcss/24/user/228270).
-* Наставник: `Неизвестно`.
+* Наставник: [Николай Маркелов](https://up.htmlacademy.ru/htmlcss/24/user/id235291).
 
 ---
 
