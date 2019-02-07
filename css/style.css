@@ -1,0 +1,6 @@
+.star {
+    display: inline-block;
+    height: 17px;
+    width: 19px;
+    background: url("/img/star.svg") no-repeat;
+}

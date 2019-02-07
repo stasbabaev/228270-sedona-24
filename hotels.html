@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Седона</title>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
     <header class="main-header">
@@ -11,9 +12,9 @@
             <img src="img/logo-sedona.svg" width="130" height="70" alt="Logo">
             </a>
             <ul class="site-navigation">
-                <li><a href="info.html">Информация</a></li>
-                <li><a href="media.html">Фото и видео</a></li>
-                <li><a href="map.html">Карта штата</a></li>
+                <li><a href="#">Информация</a></li>
+                <li><a href="#">Фото и видео</a></li>
+                <li><a href="#">Карта штата</a></li>
                 <li class="site-navigation-current"><a href="hotels.html">Гостиницы</a></li>
             </ul>
       </nav>
@@ -22,79 +23,83 @@
         <!-- Форма -->
         <ul class="hotels-list">
             <li class="hotel">
-                <img src="img/hotel1.jpg"> 
+                <img src="img/hotel1.jpg" alt="hotel1"> 
                 <h3>
-                    <a class="hotel-name" href="hotel1.html">Amara Resort & Spa</a>
+                    <a class="hotel-name" href="#">Amara Resort & Spa</a>
                 </h3>
                 <p>
                     <span class="hotel-type">Гостиница</span>
                     <span class="hotel-price">от 4000 Р.</span>
                 </p>
                 <p>
-                    <span class="button"><a href="hotel1.html">Подробнее</a></span>
-                    <span class="button"><a href="hotel1.html">Забронировать</a></span>
+                    <span class="button"><a href="#">Подробнее</a></span>
+                    <span class="button"><a href="#">Забронировать</a></span>
                 </p>
+                <!-- Затестил через CSS, но изображение все так же используется, хоть и всего раз. Может есть еще какие то-то способы? -->
                 <p>
-                    <!-- Не знаю как правильнопоказывать рейтинг, пока сделал картинкой. И в ТЗ не нашел инфы.-->
-                    <img src="img/star.svg">
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
                 </p>
                 <p class="rate">Рейтинг: 8,5</p>
             </li>
             <li class="hotel">
-                    <img src="img/hotel2.jpg"> 
-                    <h3>
-                        <a class="hotel-name" href="hotel2.html">Desert Quail Inn</a>
-                    </h3>
-                    <p>
-                        <span class="hotel-type">Мотель</span>
-                        <span class="hotel-price">от 3000 Р.</span>
-                    </p>
-                    <p>
-                        <span class="button"><a href="hotel2.html">Подробнее</a></span>
-                        <span class="button"><a href="hotel2.html">Забронировать</a></span>
-                    </p>
-                    <p>
-                        <!-- Не знаю как правильнопоказывать рейтинг, пока сделал картинкой. И в ТЗ не нашел инфы.-->
-                        <img src="img/star.svg">
-                    </p>
-                    <p class="rate">Рейтинг: 8,9</p>
-                </li>
-                <li class="hotel">
-                        <img src="img/hotel3.jpg"> 
-                        <h3>
-                            <a class="hotel-name" href="hotel3.html">Villas at Poco Diablo</a>
-                        </h3>
-                        <p>
-                            <span class="hotel-type">Апартаменты</span>
-                            <span class="hotel-price">от 2000 Р.</span>
-                        </p>
-                        <p>
-                            <span class="button"><a href="hotel3.html">Подробнее</a></span>
-                            <span class="button"><a href="hotel3.html">Забронировать</a></span>
-                        </p>
-                        <p>
-                            <!-- Не знаю как правильнопоказывать рейтинг, пока сделал картинкой. И в ТЗ не нашел инфы.-->
-                            <img src="img/star.svg">
-                        </p>
-                        <p class="rate">Рейтинг: 9,2</p>
-                    </li>
+                <img src="img/hotel2.jpg" alt="hotel2"> 
+                <h3>
+                    <a class="hotel-name" href="#">Desert Quail Inn</a>
+                </h3>
+                <p>
+                    <span class="hotel-type">Мотель</span>
+                    <span class="hotel-price">от 3000 Р.</span>
+                </p>
+                <p>
+                    <span class="button"><a href="#">Подробнее</a></span>
+                    <span class="button"><a href="#">Забронировать</a></span>
+                </p>
+                <p>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                </p>
+                <p class="rate">Рейтинг: 8,9</p>
+            </li>
+            <li class="hotel">
+                <img src="img/hotel3.jpg" alt="hotel3"> 
+                <h3>
+                    <a class="hotel-name" href="#">Villas at Poco Diablo</a>
+                </h3>
+                <p>
+                    <span class="hotel-type">Апартаменты</span>
+                    <span class="hotel-price">от 2000 Р.</span>
+                 </p>
+                 <p>
+                    <span class="button"><a href="#">Подробнее</a></span>
+                    <span class="button"><a href="#">Забронировать</a></span>
+                </p>
+                <p>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                </p>
+                <p class="rate">Рейтинг: 9,2</p>
+            </li>
         </ul>
     </main>
     <footer class="main-footer">
-            <a href="http://twitter.com">#visitSEDONA</a>
+            <a href="#">#visitSEDONA</a>
             <ul class="social">
                 <li>
-                    <a href="http://twitter.com">
+                    <a href="#">
                         <img src="img/twitter.svg" width="17" height="17" alt="Twitter">
                     </a>
                 </li>
                 <li>
-                    <a href="http://facebook.com">
+                    <a href="#">
                         <img src="img/fb.svg" width="12" height="22" alt="Facebook">
                     </a>
                 </li>
                 <li>
-                    <a href="http://youtube.com">
+                    <a href="#">
                         <img src="img/youtube.svg" width="20" height="16" alt="Youtube">
                     </a>
                 </li>
@@ -102,7 +107,7 @@
             <p>
               <b>Website by</b>
               <a href="http://htmlacademy.ru">
-                <img src="img/logo-htmlacademy.svg" width="115" height="41">
+                <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HtmlAcademyLogo">
               </a>
             </p>
           </footer>
