@@ -4,3 +4,7 @@
     width: 19px;
     background: url("/img/star.svg") no-repeat;
 }
+
+:focus {
+    outline: 1px;
+}
