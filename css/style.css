@@ -1,3 +1,6 @@
+.body {
+    font-family: 'PT Sans', Arial, sans-serif;
+}
 .star {
     display: inline-block;
     height: 17px;

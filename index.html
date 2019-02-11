@@ -99,22 +99,23 @@
             <input type="date" name="date-out" id="date-out" required>
             <div class="half-width">
               <label for="adults">Взрослые</label>
+              <!-- А если сделать так, а + и - сделать иконками(как, по идее, и должно быть) через background в CSS? -->
               <div>
-                <button>-</button>
+                <button type="button" class="control-minus" aria-label="Уменьшить"></button>
               </div>
               <input type="number" class="" step="1" min="1" max="5" name="adults" value="1" id="adults" required>
-              </div>
-                <button>+</button>
+              <div>
+                <button type="button" class="control-minus" aria-label="Увеличить"></button>
               </div>
             </div>
             <div class="half-width">
-              <label for="childrens">Дети</label>
+              <label for="children">Дети</label>
               <div>
-                <button>-</button>
+                <button type="button" class="control-minus" aria-label="Уменьшить"></button>
               </div>
-              <input type="number" class="" step="1" min="0" max="5" name="adults" value="0" id="childrens" required>
+              <input type="number" class="" step="1" min="0" max="5" name="adults" value="0" id="children" required>
               <div>
-                <button>+</button>
+                <button type="button" class="control-minus" aria-label="Уменьшить"></button>
               </div>
             </div>
             <button type="submit">Найти</button>

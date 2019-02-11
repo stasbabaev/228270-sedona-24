@@ -65,22 +65,21 @@
             </form>
         </section>
         <section class="sorting">
-            Тут мне кажется должно быть как-то по другому. Может сортировку нужно делать ul'ом?
             <div>
                 <h3>Найдено: <b>3</b></h3>
             </div>
-            <div>
-                <p>Сортировка:</p>
-                <div>
-                    <span><button>По цене</button></span>
-                    <span><button>По типу</button></span>
-                    <span><button>По рейтенгу</button></span>
-                </div>
-            </div>
-            <div>
-                    <span><button class="sort-up">up</button></span>
-                    <span><button class="sort-down">down</button></span>
-            </div>
+            <section>
+                 <h4>Сортировка:</h4>
+                 <ul aria-label="По типу">
+                     <li><a href="#">По цене</a></li>
+                     <li><a href="#">По типу</a></li>
+                     <li><a href="#">По рейтингу</a></li>
+                 </ul>
+                 <ul aria-label="По качественному признаку">
+                     <li><a href="#" class="sort-up">По возрастанию</ a></li>
+                     <li><a href="#" class="sort-down">down</a></li>
+                </ul>
+            </section>
         </section>
     -->
         <section>
@@ -98,13 +97,13 @@
                     <span class="button"><a href="#">Подробнее</a></span>
                     <span class="button"><a href="#">Забронировать</a></span>
                 </p>
-                <!-- Затестил через CSS, но изображение все так же используется, хоть и всего раз. Может есть еще какие то-то способы? -->
-                <p>
+                <div aria-hidden="true">
+                    <!-- Может нет смысла делать aria-label, т.к. дальше у нас есть <p class="rate">Рейтинг: 8,5</p>, который как разчиталка и прочитает? -->
                     <span class="star"></span>
                     <span class="star"></span>
                     <span class="star"></span>
                     <span class="star"></span>
-                </p>
+                </div>
                 <p class="rate">Рейтинг: 8,5</p>
             </li>
             <li class="hotel">
@@ -120,11 +119,11 @@
                     <span class="button"><a href="#">Подробнее</a></span>
                     <span class="button"><a href="#">Забронировать</a></span>
                 </p>
-                <p>
+                <div aria-hidden="true">
                     <span class="star"></span>
                     <span class="star"></span>
                     <span class="star"></span>
-                </p>
+                </div>
                 <p class="rate">Рейтинг: 8,9</p>
             </li>
             <li class="hotel">
@@ -140,10 +139,10 @@
                     <span class="button"><a href="#">Подробнее</a></span>
                     <span class="button"><a href="#">Забронировать</a></span>
                 </p>
-                <p>
+                <div aria-hidden="true">
                     <span class="star"></span>
                     <span class="star"></span>
-                </p>
+                </div>
                 <p class="rate">Рейтинг: 9,2</p>
             </li>
         </ul>
