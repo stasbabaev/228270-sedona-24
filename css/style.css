@@ -1,13 +1,465 @@
-.body {
-    font-family: 'PT Sans', Arial, sans-serif;
+body {
+
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #333333;
+    text-transform: uppercase;
+
+    background-color: #F2F2F2;
 }
+
+.all{
+    width: 1200px;
+
+    background-color: white;
+    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+}
+
+
+
+
+
+/* Ссылки */
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+}
+
+.main-navigation a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+}
+
+.main-navigation  a:hover {
+    color: #81B3D2;
+}
+
+.main-navigation a:focus {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation-current a {
+    color: #766357;
+}
+
+.main-footer a:first-of-type {
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.sorting-options a {
+    font-size: 14;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.3);
+    font-weight: 400;
+
+    border-bottom: 1px dashed #81B3D2;
+}
+
+.sorting-options a:hover {
+    font-size: 14;
+    text-transform: uppercase;
+    color: #81B3D2;
+}
+
+.current a{
+    font-size: 14;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 400;
+
+    border-bottom: none;
+}
+
+
+
+
+
+/* Кнопки */
+
+.button-s {
+    background-color: #766357;
+    border: none;
+
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.button-s:hover {
+    background-color: #604E43;
+
+    color: #ffffff;
+}
+
+.button-s:focus {
+    background-color: #503E33;
+
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.button-m {
+    background-color: #766357;
+    border: none;
+
+    font-size: 21px;
+    line-height: 26px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.button-m:hover {
+    background-color: #604E43;
+
+    color: #ffffff;
+}
+
+.button-m:focus {
+    background-color: #503E33;
+
+    color: rgba(255, 255, 255, 0.3);
+}
+.interested-text .button-m {
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.button-s.blue,
+.button-m.blue {
+    background-color: #81B3D2;
+
+    color: #ffffff;
+}
+
+.button-s.blue:hover,
+.button-m.blue:hover {
+    background-color: #669EC0;
+
+    color: #ffffff;
+}
+
+.button-s.blue:focus,
+.button-m.blue:focus {
+    background-color: #5496BD;
+
+    color: rgba(255, 255, 255, 0.3)
+}
+
+.control-minus {
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.control-plus {
+    width: 38px;
+    height: 38px;
+
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.control-minus:hover path,
+.control-plus:hover path {
+    fill: #000000;
+}
+
+.control-minus:focus path,
+.control-plus:focus path {
+    fill: #81B3D2;
+}
+
+a.academy-logo:hover path {
+    fill: #81B3D2;
+}
+
+a.academy-logo:focus path {
+    fill: #BDBBBC;
+}
+
+a.sort-up:hover path {
+    fill: #000000;
+}
+
+a.sort-up:focus path {
+    fill: #81B3D2;
+}
+
+a.sort-down:hover path {
+    fill: #000000;
+}
+
+a.sort-down:focus path {
+    fill: #81B3D2;
+}
+
+.calendar-icon {
+    background: none;
+    border: none;
+
+    padding: 0;
+
+    margin-left: -30px;
+}
+
+.calendar-icon:hover path {
+    fill: #000000;
+}
+
+.calendar-icon:focus path {
+    fill: #81B3D2;
+}
+
+.control-minus,
+.control-plus {
+    background-color: #F2F2F2;
+    border: none;
+
+    width: 38px;
+    height: 38px;
+}
+
+.button-s.show {
+    border: 2px solid #ffffff;
+    background-color: rgba(0, 0, 0, 0);
+
+    font-weight: 400;
+}
+
+.button-s.show:hover {
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+
+    font-weight: 400;
+    color: #000000;
+}
+
+.footer-social a:hover path {
+    fill: rgba(255, 255, 255, 0.3)
+}
+
+
+
+
+
+/* Инпуты */
+
+.form-search input {
+    border: none;
+    background-color: #f2f2f2;
+    
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.form-search input:hover {
+    background-color: #EBEBEB;
+}
+
+.form-search input:focus {
+    background-color: #ffffff;
+    border: 2px solid #E5E5E5;
+}
+
+.form label {
+    color: #000000;
+    font-weight: 700; 
+}
+
+.price input {
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #ffffff;
+
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.price input::placeholder {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+
+
+
+/* Основные блоки и элементы */
+
+.main-navigation {
+    background-color: #ffffff;
+}
+
+.intro {
+    background-image: url("/img/background.jpg");
+    background-repeat: no-repeat;
+
+    width: 1200px;
+    height: 508px;
+
+    position: relative;
+}
+
+.mask {
+    height: 57px;
+
+    background-image: url("/img/intro-mask.svg");
+    background-repeat: no-repeat;
+}
+
+.welcome {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  
+    transform: translate(-50%, -50%);
+}
+
+.welcomeText {
+    text-align: center;
+}
+
+.welcomeText b {
+    font-size: 21px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.reason-list,
+.benefit {
+    list-style: none;
+}
+
+.reason-item {
+    background-color: #eeeeee;
+}
+
+.reason-item:first-child,
+.reason-item:nth-child(2) {
+    background-color: #81B3D2;
+}
+
+.reason div {
+    text-align: center;
+}
+
+
+.benefit-item {
+    background-color: #ffffff;
+}
+
+.reason-item h2 {
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.benefit-item h2 {
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000;    
+}
+
+.interested-text {
+    text-align: center;
+}
+
+.interested-text b {
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.form-search .form {
+    background-color: #ffffff;
+    box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.main-footer {
+    background-color: rgba(255, 255, 255, 0.9)
+}
+
+.footer-social {
+    list-style: none;
+    text-align: center;
+}
+
+.sorting {
+    background-color: #ffffff;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+ul.hotels-list li {
+    background-color: #ffffff;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.hotel-list-form {
+    background-image: url(/img/filter-background.jpg);
+}
+
+.hotel-filter legend {
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+    font-weight: 700; 
+}
+
+.hotel-filter label {
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+    font-weight: 400; 
+}
+
+.hotels-list {
+    list-style: none;
+}
+
+.rate {
+    background-color: #f2f2f2;
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.sorting-options {
+    list-style: none;
+}
+
+.sorting-updown {
+    list-style: none;
+}
+
+.sorting h4 {
+    font-size: 14px;
+    color: #000000;
+    font-weight: 400;
+}
+
+.hotel-filter fieldset {
+    border: none;
+}
+
 .star {
     display: inline-block;
     height: 17px;
     width: 19px;
     background: url("/img/star.svg") no-repeat;
-}
-
-:focus {
-    outline: 1px solid;
 }
