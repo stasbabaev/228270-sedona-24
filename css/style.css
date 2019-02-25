@@ -1,28 +1,25 @@
 body {
-
     margin: 0;
     padding: 0;
-
     font-family: "PT Sans", sans-serif;
     font-size: 14px;
     line-height: 26px;
     font-weight: 400;
     color: #333333;
     text-transform: uppercase;
-
     background-color: #F2F2F2;
 }
 
-.all{
-    width: 1200px;
+.visually-hidden {
+    display: none;
+}
 
+.all {
+    width: 1200px;
+    margin: 0 auto;
     background-color: white;
     box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
-
-
-
-
 
 /* Ссылки */
 
@@ -38,7 +35,7 @@ a {
     font-weight: 700;
 }
 
-.main-navigation  a:hover {
+.main-navigation a:hover {
     color: #81B3D2;
 }
 
@@ -60,8 +57,7 @@ a {
     text-transform: uppercase;
     color: rgba(0, 0, 0, 0.3);
     font-weight: 400;
-
-    border-bottom: 1px dashed #81B3D2;
+    border-bottom: 1px dotted #81B3D2;
 }
 
 .sorting-options a:hover {
@@ -70,64 +66,52 @@ a {
     color: #81B3D2;
 }
 
-.current a{
+.current a {
     font-size: 14;
     text-transform: uppercase;
     color: #000000;
     font-weight: 400;
-
     border-bottom: none;
 }
 
-
-
-
-
 /* Кнопки */
 
-.button-s {
+.button {
     background-color: #766357;
     border: none;
-
-    font-size: 14px;
-    line-height: 21px;
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 700;
 }
 
+
+.button-s {
+    font-size: 14px;
+    line-height: 21px;
+}
+
 .button-s:hover {
     background-color: #604E43;
-
     color: #ffffff;
 }
 
 .button-s:focus {
     background-color: #503E33;
-
     color: rgba(255, 255, 255, 0.3);
 }
 
 .button-m {
-    background-color: #766357;
-    border: none;
-
     font-size: 21px;
     line-height: 26px;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-weight: 700;
 }
 
 .button-m:hover {
     background-color: #604E43;
-
     color: #ffffff;
 }
 
 .button-m:focus {
     background-color: #503E33;
-
     color: rgba(255, 255, 255, 0.3);
 }
 .interested-text .button-m {
@@ -138,21 +122,18 @@ a {
 .button-s.blue,
 .button-m.blue {
     background-color: #81B3D2;
-
     color: #ffffff;
 }
 
 .button-s.blue:hover,
 .button-m.blue:hover {
     background-color: #669EC0;
-
     color: #ffffff;
 }
 
 .button-s.blue:focus,
 .button-m.blue:focus {
     background-color: #5496BD;
-
     color: rgba(255, 255, 255, 0.3)
 }
 
@@ -164,7 +145,6 @@ a {
 .control-plus {
     width: 38px;
     height: 38px;
-
     background-color: #f2f2f2;
     border: none;
 }
@@ -206,9 +186,7 @@ a.sort-down:focus path {
 .calendar-icon {
     background: none;
     border: none;
-
     padding: 0;
-
     margin-left: -30px;
 }
 
@@ -224,7 +202,6 @@ a.sort-down:focus path {
 .control-plus {
     background-color: #F2F2F2;
     border: none;
-
     width: 38px;
     height: 38px;
 }
@@ -232,14 +209,12 @@ a.sort-down:focus path {
 .button-s.show {
     border: 2px solid #ffffff;
     background-color: rgba(0, 0, 0, 0);
-
     font-weight: 400;
 }
 
 .button-s.show:hover {
     border: 2px solid #ffffff;
     background-color: #ffffff;
-
     font-weight: 400;
     color: #000000;
 }
@@ -248,16 +223,11 @@ a.sort-down:focus path {
     fill: rgba(255, 255, 255, 0.3)
 }
 
-
-
-
-
 /* Инпуты */
 
 .form-search input {
     border: none;
-    background-color: #f2f2f2;
-    
+    background-color: #f2f2f2; 
     color: #000000;
     font-size: 14px;
     font-weight: 700;
@@ -281,7 +251,6 @@ a.sort-down:focus path {
 .price input {
     background-color: rgba(0, 0, 0, 0);
     border: 2px solid #ffffff;
-
     color: #ffffff;
     font-size: 14px;
     font-weight: 400;
@@ -295,29 +264,38 @@ a.sort-down:focus path {
     text-transform: uppercase;
 }
 
-
-
-
-
 /* Основные блоки и элементы */
 
+.main-header {
+    width: auto;
+}
+
+.main-header-logo {
+    order: 1;
+}
+
 .main-navigation {
+    display: flex;
+
     background-color: #ffffff;
+}
+
+.site-navigation li {
+    display: inline;
+
+    padding: 50px;
 }
 
 .intro {
     background-image: url("/img/background.jpg");
     background-repeat: no-repeat;
-
     width: 1200px;
     height: 508px;
-
     position: relative;
 }
 
 .mask {
     height: 57px;
-
     background-image: url("/img/intro-mask.svg");
     background-repeat: no-repeat;
 }
@@ -326,15 +304,14 @@ a.sort-down:focus path {
     position: absolute;
     top: 50%;
     left: 50%;
-  
     transform: translate(-50%, -50%);
 }
 
-.welcomeText {
+.welcome-text {
     text-align: center;
 }
 
-.welcomeText b {
+.welcome-text b {
     font-size: 21px;
     line-height: 26px;
     color: #000000;
@@ -462,4 +439,13 @@ ul.hotels-list li {
     height: 17px;
     width: 19px;
     background: url("/img/star.svg") no-repeat;
+}
+
+.rate {
+    float: right;
+    width: 110px;
+    height: 27px;
+    padding-top: 4px;
+    text-align: center;
+    color: #666666;
 }
